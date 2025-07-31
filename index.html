@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TITANBITT</title>
-  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <style>
     @font-face {
       font-family: 'Ninetea Medium';
@@ -17,7 +17,7 @@
 
     :root {
       --color-background: #312f30;
-      --color-text: #d3b5d7;
+      --color-text: #f4f3f2;
       --color-accent: #d3b5d7;
       --color-highlight: #e5e761;
       --color-light: #f4f3f2;
@@ -150,7 +150,7 @@
     .formulario button {
       padding: 0.7rem 1.5rem;
       background: var(--color-highlight);
-      color: #000;
+      color: #312f30;
       border: none;
       font-weight: bold;
       border-radius: 5px;
@@ -161,7 +161,7 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.8rem;
-      background: #111;
+      background: #312f30;
       font-family: 'Roboto Mono', monospace;
     }
 
@@ -211,6 +211,12 @@
   <section class="formulario">
     <h2>Contacto</h2>
     <form action="https://formsubmit.co/9397a61c0f3f6644aeac15d4b9487402" method="POST">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="Correo Electrónico" placeholder="tucorreo@ejemplo.com" required />
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="Teléfono" placeholder="Ej: 81 1234 5678" required />
+
       <label for="fecha">Fecha tentativa</label>
       <input type="date" id="fecha" name="Fecha Tentativa" required />
 
@@ -218,24 +224,19 @@
       <input type="text" id="tamano" name="Tamaño del Proyecto" placeholder="Ej: 120 m²" required />
 
       <label for="ubicacion">Ubicación estimada</label>
-      <select id="ubicacion" name="Ubicación">
-        <option>Allende</option>
-        <option>Monterrey</option>
-        <option>San Pedro</option>
-      </select>
+      <input type="text" id="ubicacion" name="Ubicación" placeholder="Guadalajara, Monterrey, Allende..." required />
 
       <label for="mensaje">Detalles adicionales</label>
       <textarea id="mensaje" name="Detalles" rows="4"></textarea>
 
       <button type="submit">Enviar</button>
 
-      <!-- Opcional: redirigir a una página de gracias -->
       <input type="hidden" name="_next" value="https://www.titanbitt.com/gracias.html">
     </form>
   </section>
 
   <footer>
-    &copy; 2025 TITANBITT S.A. de C.V Todos los derechos reservados.
+    &copy; 2025 TITANBITT S.A. de C.V. Todos los derechos reservados.
   </footer>
 </body>
 </html>
