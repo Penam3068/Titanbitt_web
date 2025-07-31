@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Misión – TITANBITT</title>
+  <title>Visión – TITANBITT</title>
   <link rel="icon" href="img/favicon.png" type="image/x-icon" />
   <style>
     @font-face {
@@ -12,58 +12,45 @@
       font-weight: 500;
       font-style: normal;
     }
-
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
     :root {
       --color-background: #312f30;
       --color-text: #d3b5d7;
       --color-accent: #d3b5d7;
-      --color-highlight: #e5e761;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       background-color: var(--color-background);
       color: var(--color-text);
       font-family: 'Ninetea Medium', sans-serif;
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
-
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0.5rem 1rem;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
-
     .logo {
-      width: 70px;
-      height: auto;
+      width: 60px;
     }
-
     nav {
       display: flex;
-      flex-wrap: wrap;
       gap: 1rem;
-      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      font-size: 0.75rem;
     }
-
     nav a {
       color: var(--color-text);
       text-decoration: none;
     }
-
     main {
       flex: 1;
       display: grid;
@@ -72,33 +59,26 @@
       padding: 2rem;
       gap: 2rem;
     }
-
     .text-box {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       max-width: 250px;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      color: var(--color-accent);
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
       font-family: 'Roboto Mono', monospace;
     }
-
+    .text-box h1 {
+      color: var(--color-accent);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .text-box p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     .hero-img {
       width: 100%;
-      max-height: 400px;
+      max-width: 400px;
       border-radius: 8px;
-      object-fit: cover;
     }
-
     footer {
       text-align: center;
       padding: 1rem;
@@ -106,15 +86,12 @@
       background: #111;
       font-family: 'Roboto Mono', monospace;
     }
-
     @media (max-width: 768px) {
       main {
         grid-template-columns: 1fr;
-        text-align: center;
-        place-items: center;
       }
       .text-box {
-        align-items: center;
+        text-align: center;
         max-width: 100%;
       }
     }
@@ -132,18 +109,15 @@
       <a href="https://instagram.com/titanbitt" target="_blank">@titanbitt</a>
     </nav>
   </header>
-
   <main>
     <div class="text-box">
-      <h1>Nuestra Misión</h1>
+      <h1>Visión</h1>
       <p>
-        Transformar la industria de la construcción mediante estructuras sólidas y automatizadas que ofrezcan eficiencia, sostenibilidad y bienestar.
-        En TITANBITT trabajamos para anticiparnos a las necesidades del estilo de vida moderno, combinando diseño, tecnología y funcionalidad.
+        Ser líderes en innovación constructiva, redefiniendo la manera en que las personas viven y trabajan. Visualizamos un futuro donde cada espacio construido con TITANBITT no solo sea fuerte y duradero, sino también inteligente, conectado y humano.
       </p>
     </div>
-    <img src="img/hero.jpg" alt="Imagen representativa" class="hero-img" />
+    <img src="img/vision.jpg" alt="Visión Titanbitt" class="hero-img" />
   </main>
-
   <footer>
     &copy; 2025 TITANBITT S.A. de C.V. Todos los derechos reservados.
   </footer>
