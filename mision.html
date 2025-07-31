@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-   <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra Misión – TITANBITT</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <style>
     @font-face {
       font-family: 'Ninetea Medium';
       src: url('fonts/Ninetea-Medium.otf') format('opentype');
       font-weight: 500;
       font-style: normal;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
     :root {
       --color-background: #312f30;
       --color-text: #f4f3f2;
       --color-accent: #d3b5d7;
       --color-highlight: #e5e761;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--color-background); color: var(--color-text); font-family: 'Ninetea Medium', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-    .logo { width: 100px; height: auto; }
-    nav { display: flex; gap: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    nav a { color: var(--color-text); text-decoration: none; }
-    main { flex: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 2rem; gap: 2rem; }
-    .headline { font-size: 1.1rem; line-height: 1.5; max-width: 600px; }
-    .hero-img { width: 100%; border-radius: 8px; object-fit: cover; }
-    footer { text-align: center; padding: 1rem; font-size: 0.8rem; background: #111; }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--color-background);
+      color: var(--color-text);
+      font-family: 'Ninetea Medium', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    nav a {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: #111;
+      font-family: 'Roboto Mono', monospace;
+    }
   </style>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Misión – TITANBITT</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="TITANBITT logo" class="logo" />
+    <img src="img/logo.svg" alt="TITANBITT logo" class="logo" />
     <nav>
       <a href="index.html">Inicio</a>
       <a href="mision.html">Nuestra Misión</a>
@@ -45,9 +108,11 @@
   <main>
     <h1>Nuestra Misión</h1>
     <p>
-      En TITANBITT nuestra misión es ofrecer estructuras que combinen la resistencia del steel frame con automatización inteligente, para crear hogares y espacios industriales que mejoren la calidad de vida de las personas.
+      Transformar la industria de la construcción mediante estructuras sólidas y automatizadas que ofrezcan eficiencia, sostenibilidad y bienestar. En TITANBITT trabajamos para anticiparnos a las necesidades del estilo de vida moderno, combinando diseño, tecnología y funcionalidad.
     </p>
   </main>
-  <footer>…</footer>
+  <footer>
+    &copy; 2025 TITANBITT SA. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
