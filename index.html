@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TITANBITT</title>
-  <!-- Fuente personalizada -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Fuentes personalizadas -->
   <style>
     @font-face {
       font-family: 'Ninetea Medium';
@@ -12,22 +13,79 @@
       font-weight: 500;
       font-style: normal;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
     :root {
       --color-background: #312f30;
       --color-text: #f4f3f2;
       --color-accent: #d3b5d7;
       --color-highlight: #e5e761;
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--color-background); color: var(--color-text); font-family: 'Ninetea Medium', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-    .logo { width: 100px; height: auto; }
-    nav { display: flex; gap: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    nav a { color: var(--color-text); text-decoration: none; }
-    main { flex: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 2rem; gap: 2rem; }
-    .headline { font-size: 1.1rem; line-height: 1.5; max-width: 600px; }
-    .hero-img { width: 100%; border-radius: 8px; object-fit: cover; }
-    footer { text-align: center; padding: 1rem; font-size: 0.8rem; background: #111; }
+
+    body {
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: 'Ninetea Medium', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    nav a {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .headline {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    .hero-img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: #111;
+      font-family: 'Roboto Mono', monospace;
+    }
   </style>
 </head>
 <body>
