@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visión – TITANBITT</title>
+  <title>Misión y Visión – TITANBITT</title>
   <link rel="icon" href="img/favicon.png" type="image/x-icon" />
   <style>
     @font-face {
@@ -17,6 +17,8 @@
       --color-background: #312f30;
       --color-text: #d3b5d7;
       --color-accent: #d3b5d7;
+      --color-light: #f3f2f4;
+      --color-dark: #111312f30111;
     }
     * {
       margin: 0;
@@ -24,14 +26,14 @@
       box-sizing: border-box;
     }
     body {
-      background-color: var(--color-background);
-      color: var(--color-text);
       font-family: 'Ninetea Medium', sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
     header {
+      background-color: var(--color-background);
+      color: var(--color-text);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -51,13 +53,20 @@
       color: var(--color-text);
       text-decoration: none;
     }
-    main {
-      flex: 1;
+    section {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 2fr 1fr;
       align-items: center;
-      padding: 2rem;
+      padding: 3rem 2rem;
       gap: 2rem;
+    }
+    .light {
+      background-color: var(--color-light);
+      color: #000;
+    }
+    .dark {
+      background-color: var(--color-background);
+      color: var(--color-text);
     }
     .text-box {
       display: flex;
@@ -84,15 +93,17 @@
       padding: 1rem;
       font-size: 0.8rem;
       background: #111;
+      color: var(--color-text);
       font-family: 'Roboto Mono', monospace;
     }
     @media (max-width: 768px) {
-      main {
+      section {
         grid-template-columns: 1fr;
+        text-align: center;
       }
       .text-box {
-        text-align: center;
         max-width: 100%;
+        align-items: center;
       }
     }
   </style>
@@ -102,22 +113,33 @@
     <img src="img/logo.png" alt="TITANBITT logo" class="logo" />
     <nav>
       <a href="index.html">Inicio</a>
-      <a href="mision.html">Nuestra Misión</a>
-      <a href="vision.html">Visión</a>
+      <a href="mision-vision.html">Misión y Visión</a>
       <a href="sistema.html">Cómo Funciona</a>
       <a href="https://linkedin.com/company/titanbitt-sa" target="_blank">LinkedIn</a>
       <a href="https://instagram.com/titanbitt" target="_blank">@titanbitt</a>
     </nav>
   </header>
-  <main>
+
+  <section class="dark">
+    <div class="text-box">
+      <h1>Nuestra Misión</h1>
+      <p>
+        Transformar la industria de la construcción mediante estructuras sólidas y automatizadas que ofrezcan eficiencia, sostenibilidad y bienestar. En TITANBITT trabajamos para anticiparnos a las necesidades del estilo de vida moderno, combinando diseño, tecnología y funcionalidad.
+      </p>
+    </div>
+    <img src="img/mision.jpg" alt="Misión Titanbitt" class="hero-img" />
+  </section>
+
+  <section class="light">
+    <img src="img/vision.jpg" alt="Visión Titanbitt" class="hero-img" />
     <div class="text-box">
       <h1>Visión</h1>
       <p>
         Ser líderes en innovación constructiva, redefiniendo la manera en que las personas viven y trabajan. Visualizamos un futuro donde cada espacio construido con TITANBITT no solo sea fuerte y duradero, sino también inteligente, conectado y humano.
       </p>
     </div>
-    <img src="img/vision.jpg" alt="Visión Titanbitt" class="hero-img" />
-  </main>
+  </section>
+
   <footer>
     &copy; 2025 TITANBITT S.A. de C.V. Todos los derechos reservados.
   </footer>
